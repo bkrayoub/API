@@ -1,21 +1,15 @@
 var searchInput = document.getElementById("trans");
 var result = document.getElementById("result");
 
-fetch("https://yandextranslatezakutynskyv1.p.rapidapi.com/detectLanguage", {
-	"method": "POST",
+fetch("https://imdb8.p.rapidapi.com/auto-complete?q=game%20of%20thr", {
+	"method": "GET",
 	"headers": {
-		"content-type": "application/x-www-form-urlencoded",
-		"x-rapidapi-key": "SIGN-UP-FOR-KEY",
-		"x-rapidapi-host": "YandexTranslatezakutynskyV1.p.rapidapi.com"
-	},
-	"body": {
-		"apiKey": "<REQUIRED>",
-		"text": "<REQUIRED>"
+		"x-rapidapi-host": "imdb8.p.rapidapi.com",
+		"x-rapidapi-key": "2195fc1f9dmsh109f121195f64c0p10b5b4jsn5639135863dc"
 	}
 })
-.then(response => {
-	console.log(response);
-})
+.then(response => response.jason())
+.then(data => console.log(data))
 .catch(err => {
 	console.error(err);
 });
