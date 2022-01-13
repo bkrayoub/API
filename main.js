@@ -23,6 +23,6 @@ fetch("https://imdb8.p.rapidapi.com/auto-complete?q=" + search, {
 	console.error(err);
 });
 function btn(){
-	alert("")
+	alert("");
 
 }
