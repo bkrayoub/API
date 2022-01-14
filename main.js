@@ -16,7 +16,7 @@ fetch("https://imdb8.p.rapidapi.com/auto-complete?q=" + search, {
 		
 		const moName = item.l;
 		const poster = item.i.imageUrl;
-		const movie = `<li><img src="${poster}"><h3>${moName}</h3></li>`;
+		const movie = `<li class="col-xl-3 col-xs-12 col-md-4"><img src="${poster}"><h3>${moName}</h3></li>`;
 		document.querySelector('.movies').innerHTML += movie;
 
 	})
