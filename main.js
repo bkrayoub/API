@@ -1,6 +1,6 @@
 var searchInput = document.getElementById("trans");
 var moResult = document.getElementsByClassName("movies");
-var search = "hell";
+var search = "star wars";
 fetch("https://imdb8.p.rapidapi.com/auto-complete?q=" + search, {
 	"method": "GET",
 	"headers": {
